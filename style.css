@@ -1,0 +1,467 @@
+      :root {
+        --bg-color: #ffffffc4;
+        --text-color: #333333;
+        --card-bg: #f5f5f5;
+        --heading-color: #2c3e50;
+        --nav-bg: #ffffff;
+        --nav-text: #333333;
+      }
+
+      [data-theme="dark"] {
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+        --card-bg: #2d2d2d;
+        --heading-color: #ffffff;
+        --nav-bg: #2d2d2d;
+        --nav-text: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+      body {
+        font-family: "Marck Script", serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--nav-bg);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--nav-text);
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: var(--nav-text);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #007bff;
+      }
+
+      .theme-toggle {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--nav-text);
+        padding: 0.5rem;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--nav-text);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Banner Slider */
+      .banner {
+        position: relative;
+        height: 620px;
+        overflow: hidden;
+        margin-top: 60px;
+      }
+
+      .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .slide.active {
+        opacity: 1;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Sections */
+      section {
+        padding: 80px 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        color: var(--heading-color);
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+      }
+
+      /* About Section */
+      .about-content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      #about img {
+        border-radius: 50%;
+      }
+
+      #about p {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+
+      /* Services Section */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .service-card {
+        background: var(--card-bg);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Testimonials Section */
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .testimonial-card {
+        background: var(--card-bg);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      /* FAQ Section */
+      .faq-item {
+        background: var(--card-bg);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+
+      .faq-item.active .faq-answer {
+        padding: 20px;
+        max-height: 500px;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--card-bg);
+        padding: 40px 20px;
+        margin-top: 40px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+      }
+
+      /* Social Links */
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        color: var(--text-color);
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: #007bff;
+      }
+
+      /* WhatsApp Button Styles */
+      .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-btn:hover {
+        transform: scale(1.1);
+      }
+
+      .whatsapp-btn i {
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-btn:hover i {
+        transform: rotate(10deg);
+      }
+
+      /* Tooltip for WhatsApp button */
+      .whatsapp-btn::before {
+        content: "Chat with us!";
+        position: absolute;
+        right: 70px;
+        padding: 5px 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        white-space: nowrap;
+      }
+
+      .whatsapp-btn:hover::before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .whatsapp-btn {
+          width: 50px;
+          height: 50px;
+          font-size: 1.5rem;
+          bottom: 15px;
+          right: 15px;
+        }
+
+        .whatsapp-btn::before {
+          display: none; /* Hide tooltip on mobile */
+        }
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: var(--nav-bg);
+          flex-direction: column;
+          padding: 1rem;
+          gap: 1rem;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        section {
+          padding: 40px 20px;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+
+        .banner {
+          height: 50vh;
+        }
+        .banner img {
+          object-fit: fill;
+          height: 100%;
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+        /* Navbar adjustments */
+        .navbar {
+          padding: 0.5rem;
+        }
+
+        .logo {
+          font-size: 1.2rem;
+        }
+
+        .nav-links {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: var(--nav-bg);
+          padding: 1rem;
+          text-align: center;
+        }
+
+        .nav-links.active {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+          margin-left: auto;
+        }
+
+        /* Banner adjustments */
+        .banner {
+          height: 300px;
+          margin-top: 50px;
+        }
+
+        .slide img {
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* Section adjustments */
+        section {
+          padding: 40px 15px;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+        }
+
+        /* About section */
+        .about-content {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .about-text p {
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        .about-content img {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+        }
+
+        /* Services section */
+        .services-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .service-card {
+          padding: 15px;
+        }
+
+        /* Testimonials section */
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .testimonial-card {
+          padding: 15px;
+        }
+
+        /* FAQ section */
+        .faq-question h3 {
+          font-size: 1rem;
+        }
+
+        .faq-answer p {
+          font-size: 0.9rem;
+        }
+
+        /* Footer adjustments */
+        .footer-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 30px;
+        }
+
+        .social-links {
+          justify-content: center;
+        }
+
+        /* WhatsApp button */
+        .whatsapp-btn {
+          width: 45px;
+          height: 45px;
+          font-size: 1.5rem;
+          bottom: 15px;
+          right: 15px;
+        }
+      }
+      }
