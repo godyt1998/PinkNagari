@@ -25,10 +25,10 @@ const About = () => {
           
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center">
-              Welcome to PinkcityNagari
+              Welcome to jaipur escort service 
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-              Discover the finest experiences in Jaipur with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism.
+              Discover the finest experiences in Jaipur with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism with indipendent escort.
             </p>
             <div className="space-y-4 flex flex-col items-center">
               <div className="flex flex-col items-center space-y-8 w-full max-w-md">
@@ -83,7 +83,7 @@ const About = () => {
               >
                 <div className="prose dark:prose-invert max-w-none">
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Welcome to PinkcityNagari, your premier destination for experiencing the vibrant culture and hospitality of Jaipur. Our platform is dedicated to providing exceptional services with the utmost discretion and professionalism.
+                    Welcome to jaipur escort, your premier destination for experiencing the vibrant culture and hospitality of Jaipur. Our platform is dedicated to providing exceptional services with the utmost discretion and professionalism jaipur call girl service. indipendent escort jaipur best escort service.
                   </p>
                   
                   <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Our Commitment:</h4>
@@ -96,7 +96,7 @@ const About = () => {
                   </ul>
                   
                   <p className="text-gray-600 dark:text-gray-300">
-                    Trust PinkcityNagari to deliver an unforgettable experience with complete privacy and satisfaction guaranteed.
+                    Trust Pinkcity to deliver an unforgettable experience with complete privacy and satisfaction guaranteed. call girl service 
                   </p>
                 </div>
               </Modal>
