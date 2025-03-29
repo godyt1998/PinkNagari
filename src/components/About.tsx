@@ -28,7 +28,7 @@ const About = () => {
               Welcome to jaipur escort service 
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-              Discover the finest experiences in Jaipur with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism with indipendent escort.
+              Discover the finest experiences in Jaipur with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism with Indipendent Escort.
             </p>
             <div className="space-y-4 flex flex-col items-center">
               <div className="flex flex-col items-center space-y-8 w-full max-w-md">
@@ -83,7 +83,7 @@ const About = () => {
               >
                 <div className="prose dark:prose-invert max-w-none">
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Welcome to jaipur escort, your premier destination for experiencing the vibrant culture and hospitality of Jaipur. Our platform is dedicated to providing exceptional services with the utmost discretion and professionalism jaipur call girl service. indipendent escort jaipur best escort service.
+                    Welcome to Jaipur Escort, your premier destination for experiencing the vibrant culture and hospitality of Jaipur. Our platform is dedicated to providing exceptional services with the utmost discretion and professionalism jaipur call girl service. indipendent escort jaipur best escort service.
                   </p>
                   
                   <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Our Commitment:</h4>
@@ -108,7 +108,7 @@ const About = () => {
         <div className="mt-16 bg-gray-100 dark:bg-gray-800 py-12 px-4">
           <div className="container mx-auto">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
-              Why Choose PinkcityNagari in Jaipur?
+              Why Choose Pinkcity in Jaipur?
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
