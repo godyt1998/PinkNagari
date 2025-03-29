@@ -28,7 +28,7 @@ const About = () => {
               Welcome to jaipur escort service 
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-              Discover the finest experiences in Jaipur with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism with indipendent escort.
+              Discover the finest experiences in Jaipur Escort with PinkcityNagari. We pride ourselves on providing exceptional services with utmost discretion and professionalism with indipendent escort.
             </p>
             <div className="space-y-4 flex flex-col items-center">
               <div className="flex flex-col items-center space-y-8 w-full max-w-md">
